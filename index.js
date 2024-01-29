@@ -15,15 +15,19 @@ function bmiCalculator (weight, height) {
     
 }
 
-const btn = document.querySelector("button");
+// const btn = document.querySelector("button");
 
-btn.addEventListener("click", handleClick);
+// btn.addEventListener("click", handleClick);
 
-function handleClick() {
-    console.log(bmiCalculator(document.querySelector("#weightkg").value, document.querySelector("#heightm").value));
-   document.querySelector("#title1").innerHTML = bmiCalculator(document.querySelector("#weightkg").value, document.querySelector("#heightm").value);
+// function handleClick() {
+//     console.log(bmiCalculator(document.querySelector("#weightkg").value, document.querySelector("#heightm").value));
+//    document.querySelector("#title1").innerHTML = bmiCalculator(document.querySelector("#weightkg").value, document.querySelector("#heightm").value);
 
-}
+// }
+
+$("button").click(function() {
+    $("#title1").text(bmiCalculator($("#weightkg").val(), $("#heightm").val()));
+})
 
 // var result = "";
 
